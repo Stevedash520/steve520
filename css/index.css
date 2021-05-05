@@ -1,0 +1,205 @@
+body
+{
+	margin:0;
+	padding:0;
+	border:0;
+	color:white;
+}
+a:link,a:hover
+{
+	text-decoration:none;
+	color:white;
+}
+#Container
+{
+	width:1024px;
+	margin:auto auto;/*设置整个容器在浏览器中水平居中*/
+	height:auto;
+}
+a{
+	text-decoration: none;
+}
+.header{
+	width: 100%;
+	height: 100px;
+	/*background-color: pink;*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+.header .headerContent{
+	width: 1200px;
+	height: 48px;
+	/*background-color: red;*/
+	margin: auto;
+}
+.header .headerContent img{
+	float: left;
+	margin-top: 10px;
+}
+.header .headerContent .nav{
+	float: right;
+	width: 400px;
+	height: 48px;
+	/*background-color: green;*/
+	line-height: 48px;
+	text-align: center;
+}
+.header .headerContent .nav a{
+	color: #a4a4a4;
+	margin-left: 20px;
+}
+.header .headerContent .nav a:hover{
+				text-decoration: underline;
+				color:deepskyblue;
+			}
+#fp-nav ul li a span{
+	background-color: white;
+}
+.section{
+	color: white;
+}
+.section1{
+	background-image: url(../images/section1_bg.jpg);
+	background-position: top;
+}
+.title-box{
+	position: absolute;
+	width: 100%;
+	top: 150px;
+	/*background-color: pink;*/
+}
+.title-box p{
+	text-align: center;
+	font-size: 60px;
+	margin-bottom: 25px;
+}
+.title-box a{
+	display: block;
+	width: 300px;
+	height: 60px;
+	background-image: url(../images/links.png);
+	margin: auto;
+}
+
+.title-box a:hover{
+	/*雪碧精灵技术前x 后y*/
+	background-position: -300px 0px;
+}
+/*小球*/
+#fullpage .section #ball1{
+	position: absolute;
+	top: 22.7%;
+	left: 20%;
+	width: 13.2%;
+	/*如果没有设置高,那么图片多高就多高*/
+	/*小球使用ball动画*/
+	animation: ball1 1s linear infinite alternate;
+}
+/*大球*/
+#fullpage .section #ball2{
+	position: absolute;
+	top: 49.8%;
+	left: 65.16%;
+	width: 22.3%;
+	/*如果没有设置高,那么图片多高就多高*/
+	animation: ball2 2s linear infinite alternate;
+}
+#fullpage .section #ship{
+	position: absolute;
+	top: 40.18%;
+	left: 63.96%;
+	width: 7.2%;
+	/*如果没有设置高,那么图片多高就多高*/
+	animation: ship 2s linear infinite;
+}
+/*定义大小两球的动画*/
+@keyframes ball1{
+	/*从那开始*/
+	from{
+		transform: translateY(-50px);
+	}
+	/*到那结束*/
+	to{transform: translateX(0);}
+}
+@keyframes ball2{
+	/*从那开始*/
+	from{
+		transform: translateY(0);
+	}
+	/*到那结束*/
+	to{transform: translateX(-50px);}
+}
+/*卫星动画*/
+@keyframes ship{
+	/*从那开始*/
+	from{
+		transform: rotate(0deg);
+	}
+	/*到那结束*/
+	to{transform: rotate(360deg);}
+}
+
+.word-content{
+	position: absolute;
+	width: 500px;
+	height: 100px;
+	/*background-color: pink;*/
+	left: 18%;
+	top: 40%;
+	transform: translateY(-50%);
+	display: none;
+}
+.bigword{
+	font-size: 60px;
+}
+.midword{
+	font-size: 36px;
+}
+.smallword{
+	font-size: 16px;
+	margin-top: 12px;
+}
+.line{
+	width: 28px;
+	height: 3px;
+	background-color: #5e5e5e;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.word-content a{
+	display: block;
+	width: 200px;
+	height: 48px;
+	margin-top: 50px;
+	background-image: url(../images/link2.png);
+}
+.word-content a:hover{
+	background-position: -200px 0;
+}
+.footer{
+	width: 100%;
+	height: 80px;
+	background-color: #131415;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+	color: #4a4a4a;
+	font-size: 12px;
+	line-height: 22px;
+	padding-top: 10px;
+}
+.footer img{
+	vertical-align: middle;
+}
+#picture
+{
+	width:956px;
+	height:300px;	
+	padding:22px;
+	margin:0px 12px 0px 12px;
+	background-image:url('grass(css).jpg');
+	background-attachment:fixed;/*背景图像固定,不会随着页面的其余部分滚动*/
+}

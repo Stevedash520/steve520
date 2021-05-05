@@ -1,0 +1,222 @@
+body
+{
+	margin:0;
+	padding:0;
+	border:0;
+	background-color:white;
+}
+a:link,a:hover
+{
+	text-decoration:none;
+	color:black;
+	
+}
+#Container
+{
+	width:1000px;
+	margin:auto auto;/*设置整个容器在浏览器中水平居中*/
+	height:auto;
+}
+#top
+{
+	width:1000px;
+	height:100px;
+	font-size:30px;
+	line-height:50px;
+	margin:0px 12px 0px 12px;
+	background-color:#E5F0FA;
+}
+#logo
+{
+    margin: auto;
+    height: auto;
+	float:left;
+	margin:0px 0px 0px 72px;
+	padding-top: 12px;
+}
+#small_nav ul
+{
+	list-style:none;/*去掉ul前面的项目符号*/
+	margin:40px 100px 0px 0px;
+	width:auto;
+	height:10px;
+	float:right;
+	padding:0px;
+}
+#small_nav ul li
+{
+	float:left;/*变为横向排列*/
+}
+#small_nav ul li a,#small_nav ul li a:visited
+{
+	color:#1F202B;
+	display:block;
+	line-height:1.0em;
+	padding:4px 5px;
+	text-decoration:none;/*不显示超链接下划线*/
+	font-size:12px;
+}
+#small_nav ul li a:hover/*hover-鼠标指针位于链接的上方*/
+{
+	background-color:#bfcbd6;
+	color:#465c71;
+	text-decoration:none;
+}
+#small_nav ul li a:active/*active-链接被点击的时刻*/
+{
+	background-color:#465c71;
+	color:#cfdbe6;
+	text-decoration:none;
+}
+#phone_intro
+{
+	color:#1F202B;
+	font-size:12px;
+	float:right;
+	margin:0px 0px 0px 0px;
+	position:relative;
+	bottom:1px;
+}
+#phone_intro special
+{
+	color:#0269A5;
+	font-size:15px;
+	font-family:"微软雅黑";
+}
+#link
+{
+	height:30px;
+	width:1000px;
+	margin:0px 12px 0px 12px;
+	background-color:#0269A5;
+	border-top-width:1px;
+	border-top-style:dashed;
+	border-right-style:none;
+	border-bottom-style:none;
+	border-left-style:none;
+	border-top-color:blue;
+
+}
+#nav ul
+{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+	height:auto;
+	width:auto;
+}
+#nav ul li
+{
+	float:left;
+}
+#nav ul li a,#nav ul li a:visited
+{
+	background-color:#0269A5;
+	border:1px #4e667d solid;
+	color:#dde4ec;
+	font-size:16px;
+	display:block;/*显示为块级元素,此元素前后会带有换行符*/
+	line-height:1.35em;
+	padding:8px 67px;
+	text-decoration:none;
+}
+
+
+.picture{  
+        width:1000px;  
+        height: 500px;
+        overflow: hidden;  
+        position: relative;  
+        border: 1px solid red;
+        padding: 0px 0px;
+       margin:0px 12px 0px 12px;
+}
+       
+.picture .imgcss{  
+    animation:scoll 12s linear 0s infinite;  
+} 
+.picture .textcss {
+    animation:textScroll 12s linear 0s infinite;  
+}
+.picture ul {
+    width:4000px;  
+    left:0;  
+    top:0;  
+    position: relative;  
+    align-content: center;
+}
+.picture ul:hover {
+    animation-play-state:inherit;
+} 
+.picture ul li{  
+    float:left;  
+}  
+@keyframes scoll{  
+    from{  
+        left:0;  
+    }  
+    to{  
+        left:-3000px;  
+    }  
+}   
+@keyframes textScroll{  
+    from{  
+        left:0;  
+    }  
+    to{  
+        left:-3000px;  
+    }  
+}   
+
+
+
+#official1
+{
+	text-align:center;
+	float:left;
+	font-size:20px;
+    margin:0px 12px 0px 12px;
+	width:1000px;
+	background-color:white;
+	height:280px;
+	position:relative;
+}
+
+#A
+{   height: 500px;
+    width: 1000px;
+	text-align: center;
+	color: black;
+	font-size: 35px;
+	line-height: 2em;
+	position: relative;
+}
+
+#text
+{
+	color: #00BFFF;
+	font: "微软雅黑";
+	font-size: 20px;
+	text-align: center;
+	float:left;
+}
+
+
+#B
+{
+
+	text-align: center;
+	color: black;
+	font-size: 35px;
+	line-height: 2em;
+	position: relative;
+	float: left;
+	margin-top: 100px;
+	
+
+}
+.footer
+{
+	float: left;
+	text-align: center;
+}
